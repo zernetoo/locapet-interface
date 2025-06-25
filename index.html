@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locapet - Monitoramento em Tempo Real</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Locapet 🐾</h1>
+        <p>Rastreamento e Monitoramento de Animais com GPS</p>
+    </header>
+
+    <main>
+        <section class="status">
+            <h2>Status Atual</h2>
+            <p><strong>Localização:</strong> <span id="location">Carregando...</span></p>
+            <p><strong>Status do Animal:</strong> <span id="activity">Analisando...</span></p>
+            <button onclick="simularLocalizacao()">Simular Localização</button>
+        </section>
+
+        <section class="mapa">
+            <h2>Mapa em Tempo Real</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Locapet. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
